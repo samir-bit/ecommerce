@@ -34,7 +34,7 @@ class BrandController extends Controller
         return view('admin.manage_brand', compact('brand'));
     }
 
-    //Brand Inactive
+/*    //Brand Inactive
     public function inactive($id){
     $brand = Brand:: find($id);
     $brand->status=0;
@@ -47,6 +47,14 @@ class BrandController extends Controller
         $brand->status=1;
         $brand->save();
         return back()->with('message','Success! Brand actived successfully!');
+    }*/
+
+    //Brand status
+    public function brandStatus($id,$status){
+        $brand = Brand:: find($id);
+        $brand->status=$status;
+        $brand->save();
+        return response()->json(['message'=>'Success']);
     }
     //Brand Delete
     public function delete($id){

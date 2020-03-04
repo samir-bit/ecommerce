@@ -45,13 +45,17 @@
                                                 <tr>
                                                     <td>{{$i++}}</td>
                                                     <td>{{$row->brand_name}}</td>
-                                                    <td>{{$row->status==1?'Active':'Inactive'}}</td>
                                                     <td>
-                                                        @if($row->status==1)
+                                                        {{--{{$row->status==1?'Active':'Inactive'}}--}}
+                                                        <input type="checkbox" data-toggle="toggle" data-size="mini" data-on="Active" id="brandStatus" data-id="{{$row->id}}" data-off="Deactive"{{$row->status==1?'checked':' '}}>
+
+                                                    </td>
+                                                    <td>
+                                           {{--             @if($row->status==1)
                                                             <a class="text-success btn btn-success" href="{{route('inactive-brand',$row->id)}}"><i class="fa fa-circle  "></i></a>
                                                             @else
                                                             <a class="text-success btn btn-warning" href="{{route('active-brand',$row->id)}} "><i class="fa fa-circle"></i></a>
-                                                        @endif
+                                                        @endif--}}
                                                             <a class="text-success" href="{{route('edit-brand',$row->id)}}"><i class="fa fa-edit fa-2x"></i></a>
                                                             <a class="text-danger"  href="{{route('delete-brand',$row->id)}}"><i class="fa fa-trash fa-2x"> </i></a>
                                                     </td>

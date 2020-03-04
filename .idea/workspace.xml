@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21fc1c9b-7f52-44d6-9df8-94481a0fedf4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/brand_edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/javascripts/examples/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/vendor/jquery/jquery-3.4.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/add_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/add_brand.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/manage_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/manage_brand.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/message.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -22,6 +20,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -126,8 +131,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/admin/vendor/jquery" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ecommerce\public\assets\admin\vendor\jquery" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -151,7 +161,7 @@
       <workItem from="1583220097998" duration="4080000" />
       <workItem from="1583227179576" duration="8398000" />
       <workItem from="1583296766154" duration="6060000" />
-      <workItem from="1583303287152" duration="9171000" />
+      <workItem from="1583303287152" duration="15400000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1583304329153</created>
@@ -160,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583304329153</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update brand commit">
+      <created>1583315606496</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583315606496</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,17 +187,18 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Update brand commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update brand commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583141323321">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583141323321" />
-    <state x="313" y="0" key="CommitChangelistDialog2" timestamp="1583304305163">
+    <state x="313" y="0" key="CommitChangelistDialog2" timestamp="1583322829104">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="313" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583304305163" />
+    <state x="313" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583322829104" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1583303731263">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -201,10 +219,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583303735879" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1583304602175">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1583315622926">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583304602175" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583315622926" />
     <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1583296766603">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

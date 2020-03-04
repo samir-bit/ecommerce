@@ -18,7 +18,7 @@
     <!-- ========================================================= -->
     <link rel="stylesheet" href="{{asset('/')}}assets/admin/vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="{{asset('/')}}assets/admin/vendor/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="{{asset('/')}}assets/admin/vendor/animate.css/animate.css">
+    {{--<link rel="stylesheet" href="{{asset('/')}}assets/admin/vendor/animate.css/animate.css">--}}
     <!--SECTION css-->
     <!-- ========================================================= -->
     <link rel="stylesheet" href="{{asset('/')}}assets/admin/vendor/data-table/media/css/dataTables.bootstrap.min.css">
@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="{{asset('/')}}assets/admin/vendor/toastr/toastr.min.css">
     <!--Magnific popup-->
     <link rel="stylesheet" href="{{asset('/')}}assets/admin/vendor/magnific-popup/magnific-popup.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <!--TEMPLATE css-->
     <!-- ========================================================= -->
     <link rel="stylesheet" href="{{asset('/')}}assets/admin/stylesheets/css/style.css">
@@ -140,7 +141,7 @@
 </div>
 <!--BASIC scripts-->
 <!-- ========================================================= -->
-<script src="{{asset('/')}}assets/admin/vendor/jquery/jquery-1.12.3.min.js"></script>
+<script src="{{asset('/')}}assets/admin/vendor/jquery/jquery-3.4.1.min.js"></script>
 <script src="{{asset('/')}}assets/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="{{asset('/')}}assets/admin/vendor/nano-scroller/nano-scroller.js"></script>
 <!--TEMPLATE scripts-->
@@ -164,14 +165,11 @@
 <script src="{{asset('/')}}assets/admin/javascripts/examples/tables/data-tables.js"></script>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 <!--Examples-->
 <script src="{{asset('/')}}assets/admin/javascripts/examples/dashboard.js"></script>
-<script>
-    $.validate({
-        lang: 'en'
-    });
-</script>
+<script src="{{asset('/')}}assets/admin/javascripts/examples/script.js"></script>
+
 </body>
 
 </html>
