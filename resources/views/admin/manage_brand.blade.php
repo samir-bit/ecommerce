@@ -52,7 +52,7 @@
                                                             @else
                                                             <a class="text-success btn btn-warning" href="{{route('active-brand',$row->id)}} "><i class="fa fa-circle"></i></a>
                                                         @endif
-                                                            <a class="text-success" href=""><i class="fa fa-edit fa-2x"></i></a>
+                                                            <a class="text-success" href="{{route('edit-brand',$row->id)}}"><i class="fa fa-edit fa-2x"></i></a>
                                                             <a class="text-danger"  href="{{route('delete-brand',$row->id)}}"><i class="fa fa-trash fa-2x"> </i></a>
                                                     </td>
                                                 </tr>

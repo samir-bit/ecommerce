@@ -116,7 +116,7 @@
                             <li class="has-child-item close-item {{request()->is('brand/*')? 'open-item':''}}">
                                 <a><i class="fa fa-list" aria-hidden="true"></i><span>Brand</span> </a>
                                 <ul class="nav child-nav level-1">
-                                    <li class="{{request()->is('brand/add-brand')? 'active-item':''}}"><a href="{{route('add-brand')}} ">Add Brand</a></li>
+                                    <li class="{{request()->is('brand/add-brand','brand/edit/*')? 'active-item':''}}"><a href="{{route('add-brand')}} ">Add Brand</a></li>
                                     <li class="{{request()->is('brand/manage-brand')? 'active-item':''}}"><a href="{{route('manage-brand')}} ">Manage Brand</a></li>
                                 </ul>
                             </li>
@@ -161,11 +161,17 @@
 
 <script src="{{asset('/')}}assets/admin/vendor/data-table/media/js/jquery.dataTables.min.js"></script>
 <script src="{{asset('/')}}assets/admin/vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
-<!--Examples-->
 <script src="{{asset('/')}}assets/admin/javascripts/examples/tables/data-tables.js"></script>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
 <!--Examples-->
-{{--<script src="{{asset('/')}}assets/admin/javascripts/examples/dashboard.js"></script>--}}
+<script src="{{asset('/')}}assets/admin/javascripts/examples/dashboard.js"></script>
+<script>
+    $.validate({
+        lang: 'en'
+    });
+</script>
 </body>
 
 </html>
