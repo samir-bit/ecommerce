@@ -121,6 +121,14 @@
                                     <li class="{{request()->is('brand/manage-brand')? 'active-item':''}}"><a href="{{route('manage-brand')}} ">Manage Brand</a></li>
                                 </ul>
                             </li>
+                            <li class="has-child-item close-item {{request()->is('category/*')? 'open-item':''}}">
+                                <a><i class="fa fa-list" aria-hidden="true"></i><span>Categories</span> </a>
+                                <ul class="nav child-nav level-1">
+                                    <li class="{{request()->is('category/manage-category','category/add-category')? 'active-item':''}}"><a href="{{route('manage-category')}} ">Category</a></li>
+                                    <li class="{{request()->is('category/manage-subcategory')? 'active-item':''}}"><a href="{{route('manage-subcategory')}} ">Sub Category</a></li>
+                                    <li class="{{request()->is('category/manage-subsubcategory')? 'active-item':''}}"><a href="{{route('manage-subsubcategory')}} ">Sub subCategory</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                 </div>
