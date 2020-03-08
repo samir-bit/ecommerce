@@ -5,8 +5,8 @@
         <div class="leftside-content-header">
             <ul class="breadcrumbs">
                 <li><i class="fa fa-home" aria-hidden="true"></i><a href="{{route('home')}}">Dashboard</a></li>
-                <li><a href="javascript:avoid(0)">Category</a></li>
-                <li><a href="javascript:avoid(0)">Manage Category</a></li>
+                <li><a href="javascript:avoid(0)">Sub Category</a></li>
+                <li><a href="javascript:avoid(0)">Manage Sub Category</a></li>
             </ul>
         </div>
     </div>
@@ -18,10 +18,10 @@
                     <div class="panel-content d-flex justify-content-center">
                         <div class="row">
                             <div class="col-sm-10 text-center ">
-                                <h4>Manage Category Form</h4>
+                                <h4>Manage Sub Category Form</h4>
                             </div>
                             <div class="col-sm-2 text-right">
-                                <a href="{{route('add-category')}}" class="btn btn-primary">Add Category</a>
+                                <a href="{{route('add-sub-category')}}" class="btn btn-primary">Add Sub Category</a>
                             </div>
                         </div>
 
@@ -34,7 +34,7 @@
                                                 <thead>
                                                 <tr>
                                                     <th>Serial No</th>
-                                                    <th>Category Name</th>
+                                                    <th>Sub Category Name</th>
                                                     <th>Status</th>
                                                     <th>Action</th>
                                                 </tr>

@@ -38,6 +38,18 @@ class CategoryController extends Controller
         $category->delete();
         return back()->with('message','Success! Brand Name deleted successfully!');
     }
+    public function edit($id){
+        $row = Category:: find($id);
+        return view('admin.category.edit-category', compact('row'));
+    }
+    public function updateCategory  (Request  $request){
+        $category = Category:: find($request->id);
+        $category->category = $request->category;
+        $category->category_slug = $this->slug_generator($request->category);
+        $category->save();
+        return back()->with('message','Success! Category update successfully!');
+
+    }
 
     public function slug_generator($string){
         $string= str_replace('','-',$string);
