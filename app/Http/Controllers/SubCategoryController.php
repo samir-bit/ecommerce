@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class SubCategoryController extends Controller
 {
     public function manageSubCategory(){
-        $data = SubCategory::with('category')->get();
+        $data = Category::all();
         return view('admin.category.manage-sub-category', compact('data'));
     }
     public function addSubCategory(){
