@@ -35,13 +35,13 @@ class SubCategoryController extends Controller
         $category = SubCategory:: find($request->id);
         $category->sub_cat = $request->sub_cat;
         $category->save();
-        return back()->with('message','Success! Category update successfully!');
+        return back()->with('message','Success! Sub Category update successfully!');
 
     }
     public function deleteSubCategory($id){
         $category = SubCategory:: find($id);
         $category->delete();
-        return back()->with('message','Success! Brand Name deleted successfully!');
+        return back()->with('message','Success! Sub Category deleted successfully!');
     }
     public function subcategoryStatus($id,$status){
         $brand = SubCategory:: find($id);
