@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class SubCategoryController extends Controller
 {
     public function manageSubCategory(){
-        $data = SubCategory::with('Category')->get();
+        $data = SubCategory::with('category')->get();
         return view('admin.category.manage-sub-category', compact('data'));
     }
     public function addSubCategory(){
@@ -27,5 +27,28 @@ class SubCategoryController extends Controller
         $category->save();
         return back()->with('message','Success!Sub Category saved successfully!');
     }
+    public function edit($id){
+        $row = SubCategory:: find($id);
+        return view('admin.category.edit-subcategory', compact('row'));
+    }
+    public function updateSubCategory  (Request  $request){
+        $category = SubCategory:: find($request->id);
+        $category->sub_cat = $request->sub_cat;
+        $category->save();
+        return back()->with('message','Success! Category update successfully!');
+
+    }
+    public function deleteSubCategory($id){
+        $category = SubCategory:: find($id);
+        $category->delete();
+        return back()->with('message','Success! Brand Name deleted successfully!');
+    }
+    public function subcategoryStatus($id,$status){
+        $brand = SubCategory:: find($id);
+        $brand->status=$status;
+        $brand->save();
+        return response()->json(['message'=>'Success']);
+    }
+
 
 }

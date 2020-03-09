@@ -44,10 +44,11 @@
                                                 @foreach($data as $row)
                                                     <tr>
                                                         <td>{{$i++}}</td>
-                                                        <td>{{$row->category->category}} > {{$row->sub_cat}}</td>
+
+                                                        <td>> {{$row->sub_cat}}</td>
                                                         <td>
                                                             {{--{{$row->status==1?'Active':'Inactive'}}--}}
-                                                            <input type="checkbox" data-toggle="toggle" data-size="mini" data-on="Active" id="categoryStatus" data-id="{{$row->id}}" data-off="Deactive"{{$row->status==1?'checked':' '}}>
+                                                            <input type="checkbox" data-toggle="toggle" data-size="mini" data-on="Active" id="subcategoryStatus" data-id="{{$row->id}}" data-off="Deactive"{{$row->status==1?'checked':' '}}>
 
                                                         </td>
                                                         <td>
@@ -56,8 +57,8 @@
                                                                              @else
                                                                              <a class="text-success btn btn-warning" href="{{route('active-brand',$row->id)}} "><i class="fa fa-circle"></i></a>
                                                                          @endif--}}
-                                                            <a class="text-success" href="{{route('edit-category',$row->id)}}"><i class="fa fa-edit fa-2x"></i></a>
-                                                            <a class="text-danger"  href="{{route('delete-category',$row->id)}}"><i class="fa fa-trash fa-2x"> </i></a>
+                                                            <a class="text-success" href="{{route('edit-subcategory',$row->id)}}"><i class="fa fa-edit fa-2x"></i></a>
+                                                            <a class="text-danger"  href="{{route('delete-subcategory',$row->id)}}"><i class="fa fa-trash fa-2x"> </i></a>
                                                         </td>
                                                     </tr>
                                                 @endforeach
