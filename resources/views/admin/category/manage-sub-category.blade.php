@@ -34,7 +34,7 @@
                                                 <thead>
                                                 <tr>
                                                     <th>Serial No</th>
-                                                    <th>Sub Category Name</th>
+                                                    <th>Root Category Name</th>
                                                     <th>Status</th>
                                                     <th>Action</th>
                                                 </tr>
@@ -44,7 +44,7 @@
                                                 @foreach($data as $row)
                                                     <tr>
                                                         <td>{{$i++}}</td>
-                                                        <td>{{$row->category}}</td>
+                                                        <td>{{$row->category->category}} > {{$row->sub_cat}}</td>
                                                         <td>
                                                             {{--{{$row->status==1?'Active':'Inactive'}}--}}
                                                             <input type="checkbox" data-toggle="toggle" data-size="mini" data-on="Active" id="categoryStatus" data-id="{{$row->id}}" data-off="Deactive"{{$row->status==1?'checked':' '}}>

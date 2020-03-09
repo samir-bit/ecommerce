@@ -26,24 +26,25 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <form class="form-horizontal" method="post" action="{{--{{route('save-sub-category')}}--}}">
+                            <form class="form-horizontal" method="post" action="{{route('save-subcategory')}}">
                                 @csrf
                                 <div class="form-group">
                                     <label for="category" class="col-sm-2 control-label">Category</label>
                                     <div class="col-sm-10">
                                         <select class="form-control" name="cat_id" id="category">
                                             <option value="">Select Category</option>
-
-                                            <option value="">test</option>
-
+                                            @foreach($categories as $category)
+                                                <option value="{{($category->id)}}">{{ucwords($category->category)}}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
+
                                 <div class="form-group">
                                     <label for="sub_cat" class="col-sm-2 control-label">Sub Category Name</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name="sub_cat" value="{{old('sub_cat')}}" id="sub_cat" placeholder="Sub Category Name"data-validation="required">
-                                        @error('category')
+                                        @error('sub_cat')
                                         <strong class="text-danger">{{$message}}</strong>
                                         @enderror
                                     </div>

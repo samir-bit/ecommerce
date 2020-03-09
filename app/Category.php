@@ -9,4 +9,7 @@ class Category extends Model
 {
     use SoftDeletes;
     protected $fillable =['category','category_slug'];
+    public function SubCategories(){
+        return $this->hasMany(SubCategory::class);
+    }
 }
