@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21fc1c9b-7f52-44d6-9df8-94481a0fedf4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +190,8 @@
       <workItem from="1583642778419" duration="371000" />
       <workItem from="1583644382611" duration="21522000" />
       <workItem from="1583728199737" duration="22958000" />
+      <workItem from="1583755418321" duration="102000" />
+      <workItem from="1583817110195" duration="3582000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1583304329153</created>
@@ -247,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583750731493</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Sub Category Item complete2">
+      <created>1583755510423</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583755510423</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +287,8 @@
     <MESSAGE value="Add Sub Category" />
     <MESSAGE value="Sub Category without category name" />
     <MESSAGE value="Sub Category Item complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sub Category Item complete" />
+    <MESSAGE value="Sub Category Item complete2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sub Category Item complete2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583653630357">
@@ -293,10 +303,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="530" y="166" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583729862004" />
-    <state x="313" y="0" key="CommitChangelistDialog2" timestamp="1583750728712">
+    <state x="313" y="0" key="CommitChangelistDialog2" timestamp="1583755504485">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="313" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583750728712" />
+    <state x="313" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583755504485" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1583410313736">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -317,14 +327,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583669130783" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1583750737981">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1583755512485">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583750737981" />
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1583755484548">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583755512485" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1583817151963">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583755484548" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583817151963" />
     <state x="408" y="168" key="git4idea.merge.GitPullDialog" timestamp="1583304425758">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
