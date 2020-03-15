@@ -126,6 +126,14 @@
                                 <ul class="nav child-nav level-1">
                                     <li class="{{request()->is('category/manage-category','category/add-category')? 'active-item':''}}"><a href="{{route('manage-category')}} ">Category</a></li>
                                     <li class="{{request()->is('category/manage-sub-category','category/add-sub-category')? 'active-item':''}}"><a href="{{route('manage-sub-category')}}">Sub Category</a></li>
+                                    <li class="{{request()->is('category/manage-sub-subcategory','category/add-sub-subcategory')? 'active-item':''}}"><a href="{{route('manage-sub-subcategory')}}">Sub Sub Category</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-child-item close-item {{request()->is('product/*')? 'open-item':''}}">
+                                <a><i class="fa fa-list" aria-hidden="true"></i><span>Product</span> </a>
+                                <ul class="nav child-nav level-1">
+                                    <li class="{{request()->is('product/add-product/*')? 'active-item':''}}"><a href="{{route('add-product')}} ">Add Product</a></li>
+                                    <li class="{{request()->is('product/manage-product/*')? 'active-item':''}}"><a href="{{route('manage-sub-category')}}">Manage Product</a></li>
                                 </ul>
                             </li>
                         </ul>

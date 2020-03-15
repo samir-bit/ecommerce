@@ -11,7 +11,8 @@ class SubCategoryController extends Controller
         $data = Category::all();
         return view('admin.category.manage-sub-category', compact('data'));
     }
-    public function addSubCategory(){
+
+     public function addSubCategory(){
         $categories= Category::where('status', 1)
             ->orderBy('id','DESC')
             ->get();

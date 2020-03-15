@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21fc1c9b-7f52-44d6-9df8-94481a0fedf4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SubsubCategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SubsubCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_10_110927_create_subsub_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/add-product.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/add-sub-subcategory.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/manage-sub-subcategory.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubCategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SubCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SubCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +200,9 @@
       <workItem from="1583644382611" duration="21522000" />
       <workItem from="1583728199737" duration="22958000" />
       <workItem from="1583755418321" duration="102000" />
-      <workItem from="1583817110195" duration="3582000" />
+      <workItem from="1583817110195" duration="9618000" />
+      <workItem from="1583831537742" duration="9134000" />
+      <workItem from="1584246354447" duration="17654000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1583304329153</created>
@@ -256,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583755510423</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finally Complete till Sub Category">
+      <created>1583822625893</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583822625895</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +306,8 @@
     <MESSAGE value="Sub Category without category name" />
     <MESSAGE value="Sub Category Item complete" />
     <MESSAGE value="Sub Category Item complete2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sub Category Item complete2" />
+    <MESSAGE value="Finally Complete till Sub Category" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finally Complete till Sub Category" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583653630357">
@@ -299,14 +318,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583652216759" />
-    <state x="530" y="166" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583729862004">
+    <state x="530" y="166" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584267196821">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="530" y="166" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583729862004" />
-    <state x="313" y="0" key="CommitChangelistDialog2" timestamp="1583755504485">
+    <state x="530" y="166" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584267196821" />
+    <state x="313" y="0" key="CommitChangelistDialog2" timestamp="1583822622262">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="313" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583755504485" />
+    <state x="313" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583822622262" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1583410313736">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -315,10 +334,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="459" y="199" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1583215020369" />
-    <state x="547" y="397" key="NewPhpFileDialog" timestamp="1583737336785">
+    <state x="547" y="397" key="NewPhpFileDialog" timestamp="1584264974889">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="547" y="397" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1583737336785" />
+    <state x="547" y="397" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1584264974889" />
     <state x="446" y="79" key="RollbackChangesDialog" timestamp="1583303834905">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -327,21 +346,23 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583669130783" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1583755512485">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1583822639842">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583755512485" />
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1583817151963">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583822639842" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1584246392724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583817151963" />
+    <state x="366" y="193" key="com.intellij.ide.util.TipDialog/0.0.1280.728@0.0.1280.728" timestamp="1583831537081" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584246392724" />
     <state x="408" y="168" key="git4idea.merge.GitPullDialog" timestamp="1583304425758">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="408" y="168" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1583304425758" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583400979923">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="324" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583838766700">
+      <screen x="0" y="0" width="1280" height="728" />
     </state>
+    <state x="324" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1280.728@0.0.1280.728" timestamp="1583838766700" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583400979923" />
   </component>
 </project>
